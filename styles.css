@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "vazirmath";
+    src: url(Vazirmatn.ttf);
+}
+
+@font-face {
+    font-family: "vip hala bold";
+    src: url(VIP_Hala_Bold.ttf);
+}
+
+/* تنسيق الخطوط والألوان العامة */
+body {
+    font-family: "vip hala bold";
+    background-color: #f3f4f6;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: "vip hala bold";
+    color: #1a73e8;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: "vip hala bold";
+    color: #1a73e8;
+    margin: 20px 0;
+}
+
+/* تصميم الحاوية */
+.container {
+    font-family: "vazirmath";
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تصميم الأسئلة */
+.question {
+    font-family: "vazirmath";
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: right;
+    direction: rtl;
+    border-bottom: 1px solid #ddd;
+}
+
+/* تصميم الخيارات */
+.options label {
+    font-family: "vazirmath";
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: #d4edda; /* اللون الأخضر */
+}
+
+.wrong {
+    background-color: #f8d7da; /* اللون الأحمر */
+}
+
+/* تصميم الزر */
+button {
+    font-family: "vip hala bold";
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1558b0;
+}
+
+/* تحسين التوافق مع الهواتف */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.question-text {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.question-container {
+    direction: rtl; /* تحديد اتجاه النص من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+/* نصوص التعليمات */
+.instruction {
+    font-size: 18px; /* حجم النص */
+    font-weight: bold;
+    margin: 20px 0; /* مسافة بين النصوص والأسئلة */
+}
+
+/* باقي التنسيقات تظل كما هي */
+.trueFalse {
+    display: flex; /* استخدام flexbox */
+    justify-content: flex-start; /* توزيع المحتوى */
+    margin-top: 10px; /* مسافة بين السؤال وخيارات الإجابة */
+    direction: ltr;
+
+}
+
+.trueFalse label {
+    margin: 0 5px; /* مسافة بين خيارات الصح والخطأ */
+    display: flex; /* جعل label عنصر مرن */
+    align-items: center; /* محاذاة العناصر عمودياً */
+}
+
+/* تعديل الخيارات لتكون عمودية */
+.options {
+    margin-top: 10px; /* مسافة بين السؤال وخيارات الإجابة */
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+.options label {
+    display: flex; /* استخدام flexbox */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    justify-content: flex; /* جعل المحتوى يتجه نحو اليمين */
+    direction: rtl; /* تحديد اتجاه النص من اليمين لليسار */
+    margin: 10px 0; /* مسافة بين الخيارات */
+}
+
+/* حقل النص */
+input[type="text"] {
+    font-family: "vazirmath";
+    width: 100%; /* استخدام عرض كامل للحقل */
+    max-width: 300px; /* حد أقصى لعرض الحقل */
+    padding: 8px; /* مسافة داخلية للحقل */
+    font-size: 14px; /* حجم النص داخل الحقل */
+    background-color: rgba(238, 238, 238, 0); /* خلفية شفافة */
+    color: #000;
+    border: 4px solid #ccc; /* سمك الحواف 2px */
+    border-radius: 5px; /* حواف دائرية */
+    transition: border-color 0.3s ease;
+    margin: 10px 0; /* مسافة بين الحقل والسؤال */
+}
+
+/* النتائج */
+#result-section {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    color: #000;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: right;
+    font-family: 'VIP Hala Bold';
+}
+
+/* خيارات الراديو والـ checkbox */
+input[type="radio"], input[type="checkbox"] {
+    appearance: none; /* إخفاء الشكل الافتراضي */
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000; /* سمك الحواف 3px */
+    border-radius: 20%; /* شكل دائري */
+    background-color: transparent; /* شفاف في البداية */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    
+}
+
+/* عند التحديد */
+input[type="radio"]:checked {
+    background-color: black; /* أسود عند الاختيار */
+}
+
+input[type="radio"].correct {
+    background-color: green; /* أخضر للإجابة الصحيحة */
+}
+
+input[type="radio"].wrong {
+    background-color: red; /* أحمر للإجابة الخاطئة */
+}
+
+/* حواف الحقل عند الإجابة */
+input[type="text"].correct {
+    border-color: green; /* لون الحافة عند الإجابة الصحيحة */
+}
+
+input[type="text"].wrong {
+    border-color: red; /* لون الحافة عند الإجابة الخاطئة */
+}
+
+/* نص الإجابة الصحيحة */
+.correct-answer {
+    font-size: small; /* حجم الخط للإجابة الصحيحة */
+    color: green; /* لون النص للإجابة الصحيحة */
+}

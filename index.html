@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MO2024 اختبار</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="start-section">
+            <h1>اختبار فيزياء</h1>
+            <h2>MO2024</h2>
+            <button id="start-test-btn">ابدأ الاختبار</button>
+        </div>
+        <form id="quiz-form" style="display: none;">
+            <div id="questions-container"></div>
+            <button type="button" id="submit-btn">إرسال</button>
+        </form>
+        <div id="result-section" style="display: none;">
+            <h2>نتيجتك:</h2>
+            <p id="result-score"></p>
+            <p id="result-time"></p>
+            <button id="retry-btn">إعادة المحاولة</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
